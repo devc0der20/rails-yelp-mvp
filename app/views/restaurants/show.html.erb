@@ -1,0 +1,12 @@
+
+<div class="container m-3" >
+<div class="card p-3 rounded">
+<h2 class="card-text"><%= @restaurant.name  %>
+      <%= link_to restaurant_path(@restaurant), method: :delete, data: { confirm: "Are you sure? "}, class: 'card-remove-link' do %>
+        <i class="fas fa-trash"></i>
+      <% end %>
+<p class="card-body"> <%= @restaurant.address  %></p>
+<p class="card-body"><%= @restaurant.phone_number  %></p>
+<p class="card-body"><%= @restaurant.category  %></p>
+</div>
+</div>
